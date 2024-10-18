@@ -1,0 +1,167 @@
+:root{
+    --primary-color: 0, 0, 0;
+    --secondary-color: 225, 225, 225;
+
+    --orange-color: 249, 226, 110;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+
+body{
+    background-image: url(../assets/Funny-Trivia-Questions.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    text-align: center;
+    justify-content: center;
+}
+
+div{
+    height: 200px;
+    text-align: center;
+    color: #f8ca41; 
+    font-size: 80px; 
+    font-family: Irish Grover; 
+    font-weight: 400; 
+    letter-spacing: 2.56px;
+    word-wrap: break-word;
+    margin-bottom: 0px;
+    position: relative;
+    top: 250px;
+}
+.div__titre span{
+    display: inline-block;
+    overflow: hidden;
+}
+.div__titre span span{
+    animation: tittleReveal 2s both;
+}
+
+@keyframes tittleReveal {
+    from{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.start{
+    width: 300px;
+    height: 140px;
+    top: 370px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    float: right;
+    right: 150px;
+}
+.start__bouton{
+    top: 0px;
+    height: 106px;
+    width: 283px;
+    text-align: center;
+    border-radius: 58px;
+    font-size: 48px;
+    background-color: #FFEEB6;
+    border-color: #EFBF14;
+    border: solid #EFBF14 5px;
+    margin-right: 150px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #fff;
+    border: solid #fff 8px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button:active {
+    background-color: #fff;
+    box-shadow: 0 5px #666;
+    transform: translateY(10px);
+}
+
+a{
+    height: 106px;
+    width: 283px;
+}
+
+.start span {
+    overflow: hidden;
+    display: inline-block;
+}
+.start span span {
+    animation: buttonReveal 3s both;
+}
+
+@keyframes buttonReveal {
+    from{
+        opacity: 0;
+        transform: translateX(-300%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 600px){
+    .div__titre{
+        padding-top: 10px;
+        font-size: 150px;
+        display: block;
+        transition: 0.4s ease-out;
+    }
+    .start{
+        width: 300px; 
+        right: 0px;
+        /* top: 450px; */
+        float: right;
+        display: block;
+        transition: 0.4s ease-out;
+    }
+    .start__bouton{
+    height: 90px;
+    width: 243px;
+    transition: 0.4s ease-out;
+    }
+}
+@media (max-width: 430px){
+    .div__titre{
+        padding-top: 50px;
+        font-size: 140px;
+        display: block;
+        transition: 0.4s ease-out;
+    }
+    .start{
+        height: 95px;
+        width: 310px; 
+        right: 0px;
+        float: right;
+        display: block;
+        transition: 0.4s ease-out;
+    }
+
+}
+@media (max-width: 368px){
+    .div__titre{
+        padding-top: 50px;
+        font-size: 120px;
+        display: block;
+        transition: 0.4s ease-out;
+    }
+    .start__bouton{
+        height: 80px;
+        width: 173px;
+        font-size: 38px;
+        transition: 0.4s ease-out;
+    }
+}

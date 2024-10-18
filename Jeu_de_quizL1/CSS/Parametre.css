@@ -1,0 +1,222 @@
+@import url(Section/mainheader.css);
+
+.maincontainer__button-img--retour{
+    width: 68px; 
+    height: 63px; 
+    left: 63px; 
+    top: 41px;
+    position: absolute; 
+    background: #ffffff; 
+    border-radius: 99px;
+    border: none;
+}
+.maincontainer__button-img--retour:hover{
+    background-color: #D9D9D9;
+}
+.maincontainer{
+    width: 100%;
+    height: 412px; 
+    top: 150px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.maincontainer__div{
+    width: 492px; 
+    height: 402px; 
+    padding-left: 14px; padding-right: 14px; padding-top: 18px; padding-bottom: 18px;
+    position: relative; 
+    background: #FFEEB6; 
+    border-radius: 45px; border: 10px #EFBF14 solid; 
+    justify-content: center; align-items: center; text-align: center;
+    display: inline-flex;
+}
+.div__content{
+    width: 100%; 
+    height: 262px; 
+    justify-content: flex-start; align-items: center; 
+    /* gap: 87px;  */
+    position: relative;
+    display: block;
+}
+h2{
+    align-self: stretch;
+    padding-bottom: 30px; 
+    justify-content: center; align-items: center; text-align: center;
+    display: inline-flex;
+    width: 100%;
+    color: black; 
+    font-size: 70px; font-family: Roboto; font-style: italic; font-weight: 900; 
+    word-wrap: break-word;
+}
+
+.a-img{
+    width: 60px;
+    
+}
+.a-img--mute{
+    color: #000;
+}
+
+.checkbox1, .checkbox2{
+    display: none;
+}
+.label{
+    display: block;
+    height: 60px;
+    width: 130px;
+    background-color: #aaa;
+    position: relative;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.label1{
+    display: block;
+    height: 60px;
+    width: 130px;
+    background-color: #aaa;
+    position: relative;
+    border-radius: 30px;
+    cursor: pointer;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.outils{
+    width: 100%;
+    display: flex;
+    gap: 80px;
+    padding: 0 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* .checkbox1:checked + .label__vol{
+    background-color: #1ccb19;
+}
+.checkbox2:checked + .label__mute{
+    background-color: rgb(244, 37, 37);
+} */
+
+
+@media (max-width: 850px) {
+    .maincontainer__button-img--retour{
+        width: 60px; 
+        height: 55px; 
+        left: 25px; 
+        top: 30px;
+        border-radius: 100px;
+        transition: 0.4s ease-out;
+    }
+}
+@media (max-width: 665px) {
+    .maincontainer__div{
+        width: 402px; 
+        height: 402px; 
+        padding-left: 14px; padding-right: 14px; padding-top: 28px; padding-bottom: 18px;
+        gap: 10px;
+        transition: 0.4s ease-out;
+    }
+    .div__content{ 
+        height: 262px; 
+        padding: 0 10px;
+        gap: 70px; 
+        transition: 0.4s ease-out;
+    }
+    h2{
+        bottom: 10px; 
+        padding-top: 10px; padding-bottom: 10px;
+        gap: 10px;
+        transition: 0.4s ease-out;
+    }
+    .outils{
+        gap: 55px;
+        padding: 20px 20px;
+        transition: 0.4s ease-out;
+    }
+    .label{
+        height: 60px;
+        width: 100px;
+        transition: 0.4s ease-out;
+    }
+    .label1{
+        height: 60px;
+        width: 100px;
+        transition: 0.4s ease-out;
+    }
+}
+@media (max-width: 555px) {
+    .maincontainer__button-img--retour{
+        width: 60px; 
+        height: 55px;
+        padding-top: 2px;
+        transition: 0.3s ease-out;
+    }
+    .maincontainer{
+        top: 130px;
+        transition: 0.4s ease-out;  
+    }
+    .maincontainer__div{
+        width: 330px; 
+        height: 402px; 
+        padding-left: 14px; padding-right: 14px;
+        gap: 10px;
+        transition: 0.4s ease-out;
+    }
+    .div__content{ 
+        height: 262px; 
+        padding: 0 0px;
+        flex-direction: column;
+        gap: 70px; 
+        transition: 0.4s ease-out;
+    }
+    h2{
+        font-size: 50px;
+        padding-top: 0px; padding-bottom: 0px;
+        transition: 0.4s ease-out;
+    }
+    .outils{
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px 20px;
+        transition: 0.4s ease-out;
+    }
+    .label{
+        height: 60px;
+        width: 125px;
+        transition: 0.4s ease-out;
+    }
+    .label1{
+        height: 60px;
+        width: 125px;
+        transition: 0.4s ease-out;
+    }
+}
+@media (max-width: 445px) {
+    .maincontainer__div{
+        width: 300px; 
+        height: 402px; 
+        padding-left: 14px; padding-right: 14px;
+        gap: 10px;
+        transition: 0.4s ease-out;
+    }
+    .div__contenu{ 
+        height: 262px; 
+        padding: 0 10px;
+        gap: 50px; 
+        transition: 0.4s ease-out;
+    }
+    h2{
+        bottom: 10px; 
+        padding-top: 10px; padding-bottom: 10px;
+        gap: 10px;
+        transition: 0.4s ease-out;
+    }
+}
+

@@ -1,0 +1,60 @@
+:root{
+    --primary-color: 0, 0, 0;
+    --secondary-color: 225, 225, 225;
+
+    --orange-color: 249, 226, 110;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    background-image: url(../assets/Funny-Trivia-Questions.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div{
+    height: 200px;
+    text-align: center;
+    color: #F9E26E; 
+    font-size: 80px; 
+    font-family: Irish Grover; 
+    font-weight: 400; 
+    letter-spacing: 2.56px;
+    word-wrap: break-word;
+    margin-bottom: 0px;
+    position: relative;
+    top: 250px;
+}
+
+@media (max-width: 600px){
+    .div__titre{
+        padding-top: 10px;
+        font-size: 150px;
+        display: block;
+    }
+}
+@media (max-width: 430px){
+    .div__titre{
+        padding-top: 50px;
+        font-size: 140px;
+        display: block;
+    }
+}
+@media (max-width: 368px){
+    .div__titre{
+        padding-top: 50px;
+        font-size: 120px;
+        display: block;
+    }
+}

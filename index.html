@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Accueil du Quiz</title>
+        <link rel="stylesheet" href="./styles/index.css" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="content">
+                <h1>Bienvenue sur le Quiz Interactif</h1>
+                <p>Testez vos connaissances sur divers sujets avec notre quiz interactif !</p>
+                <div class="buttons">
+                    <button id="startQuizBtn" class="btn-primary">Voir les thèmes de quiz</button>
+                    <button id="goToRanking" class="btn-secondary">Voir le classement global</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.getElementById("startQuizBtn").addEventListener("click", function () {
+                window.location.href = "topics.html"
+            })
+            document.getElementById("goToRanking").addEventListener("click", function () {
+                window.location.href = "ranking.html"
+            })
+        </script>
+    </body>
+</html>

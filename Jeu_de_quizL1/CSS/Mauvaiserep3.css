@@ -1,0 +1,104 @@
+@import url(Section/mainheader.css);
+
+
+.maincontainer__button-img--retour{
+    width: 68px; 
+    height: 63px; 
+    left: 63px; 
+    top: 0px;
+    position: absolute; 
+    background: #ffffff; 
+    border-radius: 99px;
+    border: none;
+}
+.maincontainer__button-img--retour:hover{
+    background-color: #D9D9D9;
+}
+.main__button-img{
+    width: 68px; 
+    height: 63px; 
+    left: 1398px; 
+    /* top: 41px; */
+    position: absolute; 
+    background: #ffffff; 
+    border-radius: 99px;
+    border: none;
+}
+.maincontainer__option{
+    width: 1213px; 
+    left: 0px; top: 49px; 
+    position: absolute; 
+    justify-content: space-between; align-items: center; 
+    display: inline-flex;
+}
+.div__name{
+    width: 984px;
+    height: 200px; 
+    left: 255px; top: 80px; 
+    position: absolute;
+}
+h1{
+    left: 417px; top: 0px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 48px; font-family: Roboto; font-weight: 400; 
+    word-wrap: break-word;
+}
+h4{
+    width: 165px; 
+    left: 399px; top: 52px; 
+    position: absolute; 
+    text-align: center; 
+    color: white; 
+    font-size: 20px; font-family: Inter; font-weight: 300;
+    word-wrap: break-word;
+}
+h2{ 
+    text-align: center; 
+    color: white; 
+    font-size: 36px; font-family: Inter; font-weight: 400; 
+    word-wrap: break-word;
+}
+.div__question{
+    left: 0px; top: 402px; bottom: 0px;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+.div__buttons{
+    height: 219px; 
+    left: 200px; top: 316px; 
+    position: absolute; 
+    justify-content: flex-start; align-items: flex-start; 
+    gap: 47px;
+    display: inline-flex;
+}
+.div__buttons__right{
+    margin-top: 120px;
+}
+.div__buttons__rep{
+    width: 519px; 
+    height: 92px; 
+    background: #FFEEB6; 
+    border-radius: 30px; border: 5px #EFBF14 solid;
+    /* width: 364.40px;  */
+    text-align: center; 
+    color: black; 
+    font-size: 16px; font-family: Inter; font-weight: 700; 
+    line-height: 19.37px; 
+    letter-spacing: 0.32px; 
+    word-wrap: break-word;
+}
+.div__buttons__bonnerep{
+    background-color: #26DA22;
+    border-color: #8FEF14;
+}
+.div__buttons__wronganswer3{
+    background-color: #EB2F2F;
+    border-color: #EF5614;
+}
+
+
+
+
+

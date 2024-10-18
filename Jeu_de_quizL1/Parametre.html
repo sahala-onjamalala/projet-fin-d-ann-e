@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo-quiz-en-forme-de-bulle-liquide-quiz-jeu-de-brainny-mot-vecteur-2eayyrr.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/Parametre.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <main class="main">
+        <a href="Questionnaire.html">
+            <button class="maincontainer__button-img--retour">
+                <img src="assets/icons/retour.svg" alt="Retour">
+            </button>
+        </a>
+        <div class="maincontainer">
+            <div class="maincontainer__div">
+                <div class="div__content">
+                    <h2>Son</h2>
+                    <audio autoplay id="myAudio" src="Audio/Sandhy_Ho anao (Clip officiel 2023).mp3"></audio><br>
+                    <div class="outils">
+                        <a href="javascript:void(0)" onclick="changeState(0)" class="btn">
+                            <input type="checkbox" name="" id="toggle1" class="checkbox1">
+                        <label for="toggle" class="label1 label__vol">
+                            <img src="assets/icons/volume.svg" alt="activer" class="a-img a-img--vol">
+                        </label>
+                        </a>
+                        <a href="javascript:void(0)" onclick="changeState(1)" class="btn">
+                            <input type="checkbox" name="" id="toggle2" class="checkbox2">
+                        <label for="toggle" class="label label__mute">
+                            <img src="assets/icons/mute.svg" alt="désactiver" class="a-img a-img--mute">
+                        </label>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <header class="header">
+        <div class="header__img">
+            <img src="assets/logo-quiz-en-forme-de-bulle-liquide-quiz-jeu-de-brainny-mot-vecteur-2eayyrr.jpg" alt="Logo" class="header__img--logo">
+        </div>
+        <nav class="header__nav">
+            <div class="header__nav__menu">
+                <a href="Mode.html">
+                    <div class="menu__accueil">
+                        <img src="assets/icons/accueil.svg" alt="Acceuil" class="header__nav__menu-accueil">
+                    </div>
+                </a>
+                <div class="menu__classement">
+                    <img src="assets/icons/classement.svg" alt="Classement" class="header__nav__menu-classement">
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        function changeState(x) {
+            let btn = document.querySelectorAll(".btn");
+            let audio = document.querySelector("#myAudio");
+
+            if(x == 0) {
+                audio.play();
+                let state = document.querySelector('.label__vol');
+                state.style.background="#1ccb19";
+                let mute = document.querySelector('.label__mute');
+                mute.style.background="#aaa";
+                mute.style.transition = "0.4s ease-out";
+            }
+            if(x == 1) {
+                audio.pause();
+                audio.currentTime = 0;
+                let mute = document.querySelector('.label__mute');
+                mute.style.background="rgb(244, 37, 37)";
+                let state = document.querySelector('.label__vol');
+                state.style.background="#aaa";
+                state.style.transition = "0.4s ease-out";
+            }
+        }
+    </script>
+</body>
+</html>

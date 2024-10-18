@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Classement des Joueurs</title>
+        <link rel="stylesheet" href="./styles/ranking.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Classement Global des Joueurs</h1>
+            <table id="ranking-table">
+                <thead>
+                    <tr>
+                        <th>Position</th>
+                        <th>Nom du Joueur</th>
+                        <th>Score</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="ranking-body">
+                    <!-- Les scores seront injectés ici par JavaScript -->
+                </tbody>
+            </table>
+            <div class="buttons">
+                <button id="backToTopicsBtn" class="btn-primary">Retour aux thèmes</button>
+                <button id="backToHomeBtn" class="btn-secondary">Retour à la page d'Accueil</button>
+            </div>
+        </div>
+
+        <script src="./scripts/api/scores.js"></script>
+        <script src="./scripts/ranking.js"></script>
+    </body>
+</html>
